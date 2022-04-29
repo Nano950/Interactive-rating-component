@@ -1,16 +1,43 @@
-body {
+* {
     box-sizing: border-box;
-    height: 100vh;
 }
 
+body {
+    background-color: hsl(230, 100%, 99%);
+    height: 100vh;
+    z-index: -1000;
+}
+/* background styles */
+
+.square-thing {
+    position: relative;
+    border-radius: 0 0 0 100px;
+    height: 50vh;
+    background-color: hsl(224, 65%, 95%);
+    z-index: -100;
+}
+
+/* card styles */
 header {
     background-image: url('./images/pattern-circles.svg') ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110px;
     border: 1px solid black;
+    position: relative;
+    top: -50%;
+    transform: translateY(50%);
     width: fit-content;
     margin: 0 auto;
+}
+
+.card {
+    border: 1px solid black;
+    width: fit-content;
+    margin:0 auto;
+    position: relative;
+    top: -50%;
+    transform: translateY(50%);
 }
 
 h1 {
@@ -20,12 +47,6 @@ h1 {
 h2 {
     text-align: center;
     font-size: 16px;
-}
-
-.card {
-    border: 1px solid black;
-    width: fit-content;
-    margin:0 auto;
 }
 
 h3 {
