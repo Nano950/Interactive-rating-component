@@ -4,15 +4,18 @@
 
 body {
     background-color: hsl(230, 100%, 99%);
+    margin: 0;
+    padding: 0;
     height: 100vh;
     z-index: -1000;
+    font-family: "Manrope";
 }
 /* background styles */
 
 .square-thing {
     position: relative;
     border-radius: 0 0 0 100px;
-    height: 50vh;
+    height: 50%;
     background-color: hsl(224, 65%, 95%);
     z-index: -100;
 }
@@ -38,6 +41,7 @@ header {
     position: relative;
     top: -50%;
     transform: translateY(50%);
+    width: 500px;
 }
 
 h1 {
@@ -49,9 +53,17 @@ h2 {
     font-size: 16px;
 }
 
+.pageviews-money { 
+    margin-top: 20px ;
+}
+
 h3 {
     display: inline-block;
     margin: 0 3rem 0 3rem;
+}
+
+h3 #money { 
+    float: right;
 }
 
 form {
@@ -61,6 +73,7 @@ form {
 }
 
 #views-range {
+    display: block;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
