@@ -89,10 +89,27 @@ form {
 #views-range {
     display: block;
     margin: 20px auto;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     width: 425px;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 50px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#views-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: hsl(174, 86%, 45%);
+    background: hsl(174, 86%, 45%) url('./images/icon-slider.svg') no-repeat center;
+    cursor: pointer;
+
 }
 
 /* toggle switch styles */
@@ -100,8 +117,9 @@ form {
     position: relative;
     top:50%;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 48px;
+    height: 26px;
+    margin: 0 10px;
 }
   
 .switch input { 
@@ -125,8 +143,8 @@ form {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 18px;
+    width: 18px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -167,8 +185,3 @@ h5, .slider{
     display: inline-block;
 }
 
-label.switch {
-    position: relative;
-    top:50%;
-    transform: translateY(-50%);
-}
