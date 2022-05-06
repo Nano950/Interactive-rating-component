@@ -35,8 +35,10 @@ header {
 }
 
 .card {
+    background-color: hsl(0, 0%, 100%);
     border: 1px solid black;
-    width: fit-content;
+    border-radius: 30px;
+    max-width: 500px;
     margin:0 auto;
     position: relative;
     top: -50%;
@@ -60,26 +62,37 @@ h2 {
 }
 
 h3 {
+    color:hsl(225, 20%, 60%);
     display: inline-block;
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 600;
     margin: 0 3rem 0 3rem;
+}
+
+#pageviews {
+    letter-spacing: 1px;
 }
 
 #money { 
     float: right;
+    font-size: 15px;
     
 }
 
 form {
     border-bottom: 1px solid black;
     width: 100%;
-    margin: 0 auto; 
+    margin: 40px auto; 
 }
 
 #views-range {
     display: block;
+    margin: 20px auto;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    width: 425px;
 }
 
 /* toggle switch styles */
@@ -152,4 +165,10 @@ input:checked + .slider::before {
 
 h5, .slider{
     display: inline-block;
+}
+
+label.switch {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
 }
